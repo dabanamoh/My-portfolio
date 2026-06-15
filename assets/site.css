@@ -30,3 +30,15 @@ html { scroll-behavior: smooth; }
 
 /* Make replaceable placeholder images obvious on hover */
 img[data-placeholder] { outline: 1px dashed rgba(70,72,212,0.25); outline-offset: -1px; }
+
+/* Featured cards — blue body for contrast against the light page */
+.card-blue { background: #4648d4 !important; border-color: rgba(255,255,255,0.12) !important; }
+.card-blue h2, .card-blue h3, .card-blue .text-on-surface { color: #fff !important; }
+.card-blue p, .card-blue .text-secondary { color: rgba(255,255,255,0.88) !important; }
+.card-blue .text-primary { color: #fff !important; }
+.card-blue .material-symbols-outlined { color: #fff !important; }
+.card-blue .font-caption { background: rgba(255,255,255,0.20) !important; color: #fff !important; }
+.card-blue:hover { box-shadow: 0 22px 45px -18px rgba(70,72,212,0.55) !important; }
+
+/* offset in-page anchor jumps for the fixed nav */
+:target { scroll-margin-top: 96px; }
