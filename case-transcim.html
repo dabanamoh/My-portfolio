@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Transcim — Case Study · Mohammed Dabana</title>
+<meta name="description" content="Transcim — the website for a UK Microsoft consultancy (Dynamics 365, Power Platform, Copilot Studio AI). A web design & build case study by Mohammed Dabana.">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script src="assets/tailwind.config.js"></script>
+<link rel="stylesheet" href="assets/site.css">
+<link rel="stylesheet" href="assets/case.css">
+</head>
+<body class="bg-white text-on-surface font-body text-body-md antialiased">
+
+<div class="case-progress" data-progress></div>
+
+<!-- ============================ NAV ============================ -->
+<header class="fixed top-0 w-full z-50 glass-panel border-b border-outline-variant/30 shadow-sm">
+  <div class="flex justify-between items-center max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop h-20">
+    <a class="font-display text-[22px] md:text-[24px] font-extrabold tracking-tight text-primary" href="index.html">Mohammed&nbsp;Dabana</a>
+    <nav class="hidden md:flex items-center gap-8">
+      <a class="font-label-md text-label-md text-primary font-bold border-b-2 border-primary py-1" href="work.html">Work</a>
+      <a class="font-label-md text-label-md text-secondary hover:text-primary transition-colors" href="about.html">About</a>
+      <a class="font-label-md text-label-md text-secondary hover:text-primary transition-colors" href="contact.html">Contact</a>
+      <a class="bg-primary text-on-primary font-label-md text-label-md px-6 py-3 rounded-lg btn-primary-shadow hover:-translate-y-0.5 transition-transform" href="contact.html">Let's talk</a>
+    </nav>
+    <button data-menu-toggle class="md:hidden text-primary p-2" aria-label="Open menu"><span class="material-symbols-outlined">menu</span></button>
+  </div>
+  <div data-mobile-menu class="hidden md:hidden border-t border-outline-variant/30 bg-surface-container-lowest">
+    <div class="px-margin-mobile py-4 flex flex-col gap-1">
+      <a class="font-label-md text-label-md text-primary font-bold py-3" href="work.html">Work</a>
+      <a class="font-label-md text-label-md text-on-surface hover:text-primary py-3" href="about.html">About</a>
+      <a class="font-label-md text-label-md text-on-surface hover:text-primary py-3" href="contact.html">Contact</a>
+      <a class="bg-primary text-on-primary font-label-md text-label-md px-6 py-3 rounded-lg text-center mt-2" href="contact.html">Let's talk</a>
+    </div>
+  </div>
+</header>
+
+<main class="case case--transcim pt-20">
+
+  <!-- ============================ COVER ============================ -->
+  <section class="band band--soft">
+    <div class="case-wrap pt-14 md:pt-20 pb-0">
+      <a class="inline-flex items-center gap-1 text-muted hover:text-accent text-sm font-semibold mb-10" href="work.html"><span class="material-symbols-outlined text-[18px]">arrow_back</span> All work</a>
+      <p class="case-eyebrow mb-5">Web Design &amp; Build · 2026</p>
+      <h1 class="case-display text-[15vw] leading-[0.92] md:text-[112px] mb-6">Transcim</h1>
+      <p class="text-body-lg md:text-[22px] text-muted max-w-2xl mb-8">The website for a UK Microsoft consultancy — built to make deep <span class="text-accent font-semibold">Dynamics 365, Power Platform and Copilot Studio</span> expertise read as clear, outcome-led and trustworthy.</p>
+      <div class="flex flex-wrap items-center gap-x-8 gap-y-3 text-sm mb-4">
+        <span class="flex items-center gap-2"><span class="text-muted">Role</span><span class="font-semibold">Web Design &amp; Build</span></span>
+        <span class="flex items-center gap-2"><span class="text-muted">Client</span><span class="font-semibold">TRANSCIM Limited</span></span>
+        <span class="flex items-center gap-2"><span class="text-muted">Sector</span><span class="font-semibold">Microsoft consultancy</span></span>
+        <span class="flex items-center gap-2"><span class="text-muted">Year</span><span class="font-semibold">2026</span></span>
+      </div>
+      <p class="text-sm text-muted max-w-2xl mb-14 italic">I designed and built the site — and I'm also part of the team it introduces, as Head of AI &amp; Copilot Studio. Built with AI.</p>
+    </div>
+    <!-- faithful recreation of the live hero, breaks the band -->
+    <div class="case-wide pb-16 md:pb-24">
+      <div class="glow browser">
+        <div class="browser__bar"><span class="browser__dots"><i></i><i></i><i></i></span><span class="browser__url">transcim.com</span></div>
+        <div class="px-6 py-12 md:px-16 md:py-20" style="background:radial-gradient(130% 130% at 85% -10%, #0b4da2, #07182f 62%)">
+          <span class="inline-flex items-center gap-2 text-[11px] md:text-xs font-bold uppercase tracking-[0.14em]" style="color:#9fc0ee">
+            <span class="w-1.5 h-1.5 rounded-full" style="background:#f5a623"></span>
+            Microsoft Dynamics 365 · Power Platform · Copilot Studio
+          </span>
+          <h2 class="font-extrabold leading-[1.05] text-white mt-4 mb-5 text-3xl md:text-5xl max-w-[18ch]">Make Microsoft technology deliver <span style="color:#f5a623">real business outcomes.</span></h2>
+          <p class="text-base md:text-lg max-w-xl" style="color:#b9c6dd">TRANSCIM helps organisations get measurable results from Microsoft Dynamics 365, the Power Platform and Copilot Studio AI agents.</p>
+          <div class="flex flex-wrap gap-3 mt-7">
+            <span class="font-bold px-5 py-2.5 rounded-lg text-sm" style="background:#f5a623;color:#0a1f3c">Book a discovery call</span>
+            <span class="font-semibold px-5 py-2.5 rounded-lg text-sm text-white border border-white/30">Explore services</span>
+          </div>
+          <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 mt-10 pt-6 border-t border-white/10 max-w-2xl">
+            <div><div class="text-2xl font-extrabold text-white">100%</div><div class="text-xs" style="color:#9fb0c9">Microsoft focused</div></div>
+            <div><div class="text-2xl font-extrabold text-white">UK</div><div class="text-xs" style="color:#9fb0c9">Milton Keynes based</div></div>
+            <div><div class="text-2xl font-extrabold text-white">24h</div><div class="text-xs" style="color:#9fb0c9">Response time</div></div>
+            <div><div class="text-2xl font-extrabold text-white">1:1</div><div class="text-xs" style="color:#9fb0c9">Outcome to engagement</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ OVERVIEW ============================ -->
+  <section class="case-wrap py-20 md:py-28">
+    <div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+      <div class="md:col-span-4">
+        <p class="case-eyebrow mb-4">Overview</p>
+        <div class="rule"></div>
+      </div>
+      <div class="md:col-span-8">
+        <p class="text-[22px] md:text-[26px] leading-snug font-semibold mb-6">TRANSCIM goes deep on a few Microsoft technologies and ties every engagement to a measurable outcome. The site had to say exactly that — credibly, and fast.</p>
+        <p class="text-body-lg text-muted max-w-2xl">I designed and built the marketing site for TRANSCIM, a Milton Keynes consultancy specialising in Dynamics 365, the Power Platform and Copilot Studio AI. The brief: translate deep, certified Microsoft expertise into a clear, outcome-led story a buyer trusts in a single scroll — credentials, services, approach and team. I'm also on the team it introduces, as Head of AI &amp; Copilot Studio. Built with AI.</p>
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 mt-12">
+          <div><div class="text-3xl font-extrabold text-accent">100%</div><div class="text-sm text-muted mt-1">Microsoft focused</div></div>
+          <div><div class="text-3xl font-extrabold text-accent">3</div><div class="text-sm text-muted mt-1">core specialisms</div></div>
+          <div><div class="text-3xl font-extrabold text-accent">23</div><div class="text-sm text-muted mt-1">capabilities mapped</div></div>
+          <div><div class="text-3xl font-extrabold text-accent">AI</div><div class="text-sm text-muted mt-1">Copilot agent on-page</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ BRAND / TRUST (dark) ============================ -->
+  <section class="band band--ink py-20 md:py-28">
+    <div class="case-wide">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center">
+        <div class="lg:col-span-5">
+          <img src="images/transcim/transcim-og.jpg" alt="TRANSCIM Limited brand mark" class="w-full max-w-[360px] mx-auto rounded-2xl shadow-2xl">
+        </div>
+        <div class="lg:col-span-7">
+          <p class="case-eyebrow mb-4">The brand</p>
+          <h2 class="case-display text-3xl md:text-5xl text-white mb-5">Specialists across the Microsoft cloud.</h2>
+          <p class="text-muted text-body-lg mb-8">A confident blue-and-gold identity, anchored by a gear-and-globe mark — positioning a small UK firm as a serious, certified Microsoft Solutions Partner.</p>
+          <div class="flex flex-wrap gap-2.5">
+            <span class="chip">Dynamics 365</span>
+            <span class="chip">Business Central</span>
+            <span class="chip">Power Apps</span>
+            <span class="chip">Power Automate</span>
+            <span class="chip">Power BI</span>
+            <span class="chip">Copilot Studio</span>
+            <span class="chip">Success by Design</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ SPECIALISMS ============================ -->
+  <section class="case-wrap py-20 md:py-28">
+    <div class="max-w-2xl mb-14">
+      <p class="case-eyebrow mb-4">What we do</p>
+      <h2 class="case-display text-3xl md:text-5xl">Three specialisms, all about outcomes.</h2>
+      <p class="text-body-lg text-muted mt-5">The site goes deep on a small number of Microsoft technologies — and ties each to a business result you can measure.</p>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
+      <div class="rounded-2xl border border-[color:var(--line)] p-8">
+        <span class="material-symbols-outlined text-accent text-4xl mb-4">grid_view</span>
+        <h3 class="text-xl font-bold mb-3">Dynamics 365</h3>
+        <p class="text-muted">Implement, optimise and adopt Sales, Customer Service, Field Service, Finance and Supply Chain — so teams work from one trusted view of the customer.</p>
+      </div>
+      <div class="rounded-2xl border border-[color:var(--line)] p-8">
+        <span class="material-symbols-outlined text-accent text-4xl mb-4">bolt</span>
+        <h3 class="text-xl font-bold mb-3">Power Platform</h3>
+        <p class="text-muted">The apps, automations and dashboards the business actually needs — Power Apps, Power Automate, Power BI and Power Pages — without long custom builds.</p>
+      </div>
+      <div class="rounded-2xl p-8 text-white" style="background:linear-gradient(160deg,#0b4da2,#07182f)">
+        <span class="material-symbols-outlined text-4xl mb-4" style="color:#f5a623">smart_toy</span>
+        <h3 class="text-xl font-bold mb-3">Copilot Studio AI</h3>
+        <p style="color:#b9c6dd">Design and deploy AI agents on Microsoft Copilot Studio that automate work and assist people — grounded in your own data and policies. <span class="text-white font-semibold">My area on the team.</span></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ HOW WE WORK + PROCESS ============================ -->
+  <section class="band band--soft py-20 md:py-28">
+    <div class="case-wrap">
+      <div class="max-w-2xl mb-14">
+        <p class="case-eyebrow mb-4">How we work</p>
+        <h2 class="case-display text-3xl md:text-5xl">Outcome-led, not technology for its own sake.</h2>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-10 gap-y-8 mb-16">
+        <div><div class="flex items-center gap-2 mb-2"><span class="material-symbols-outlined text-accent">target</span><h3 class="font-bold">Outcome first</h3></div><p class="text-muted text-sm">Every engagement starts with the business result you need; technology choices flow from that.</p></div>
+        <div><div class="flex items-center gap-2 mb-2"><span class="material-symbols-outlined text-accent">verified</span><h3 class="font-bold">Deep expertise</h3></div><p class="text-muted text-sm">A narrow set of Microsoft technologies, gone deep — practitioners who have shipped what they recommend.</p></div>
+        <div><div class="flex items-center gap-2 mb-2"><span class="material-symbols-outlined text-accent">handshake</span><h3 class="font-bold">Honest scope</h3></div><p class="text-muted text-sm">We'll say when something's the wrong fit. Trust is built on what we decline as much as what we deliver.</p></div>
+        <div><div class="flex items-center gap-2 mb-2"><span class="material-symbols-outlined text-accent">groups</span><h3 class="font-bold">Adoption matters</h3></div><p class="text-muted text-sm">A system nobody uses delivers nothing. We design for adoption from day one.</p></div>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="flex gap-5"><span class="numdot">1</span><div><h3 class="text-xl font-bold mb-2">Discover</h3><p class="text-muted">Start with the outcome. Workshops with the people closest to the problem, mapped to the systems and data you already have.</p></div></div>
+        <div class="flex gap-5"><span class="numdot">2</span><div><h3 class="text-xl font-bold mb-2">Design &amp; Deliver</h3><p class="text-muted">Design the smallest solution that hits the outcome, then ship it in iterations you can use immediately.</p></div></div>
+        <div class="flex gap-5"><span class="numdot">3</span><div><h3 class="text-xl font-bold mb-2">Adopt &amp; Improve</h3><p class="text-muted">Training, change support and measurement so the solution gets used — handed over fully documented.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ WHY (feature strip) ============================ -->
+  <section class="case-wrap py-20 md:py-28">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-center">
+      <div>
+        <p class="case-eyebrow mb-4">Why Transcim</p>
+        <h2 class="case-display text-3xl md:text-4xl mb-5">Practitioners, not <span class="text-accent">PowerPoint consultants.</span></h2>
+        <p class="text-body-lg text-muted mb-6">The messaging leans on one promise: every consultant has shipped what they recommend. The page backs it with proof, not adjectives.</p>
+        <ul class="space-y-3">
+          <li class="flex gap-3"><span class="material-symbols-outlined text-accent text-[20px]">check_circle</span><span>Experienced practitioners on every engagement — no offshore handoffs</span></li>
+          <li class="flex gap-3"><span class="material-symbols-outlined text-accent text-[20px]">check_circle</span><span>Current Microsoft certifications across the full business cloud</span></li>
+          <li class="flex gap-3"><span class="material-symbols-outlined text-accent text-[20px]">check_circle</span><span>Outcome-led pricing — you pay for results, not days</span></li>
+          <li class="flex gap-3"><span class="material-symbols-outlined text-accent text-[20px]">check_circle</span><span>UK-based, GDPR-aware, documented handover</span></li>
+        </ul>
+      </div>
+      <div class="shot"><img src="images/transcim/team-collaboration.jpg" alt="TRANSCIM consultants collaborating on a Microsoft project"></div>
+    </div>
+  </section>
+
+  <!-- ============================ TEAM ============================ -->
+  <section class="band band--soft py-20 md:py-28">
+    <div class="case-wrap">
+      <div class="max-w-2xl mb-14">
+        <p class="case-eyebrow mb-4">Meet the team</p>
+        <h2 class="case-display text-3xl md:text-5xl">Experienced Microsoft practitioners.</h2>
+        <p class="text-body-lg text-muted mt-5">A small, deliberately experienced team — designed into the site as a credibility anchor. I'm one of the four.</p>
+      </div>
+      <div class="grid grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="bg-white rounded-2xl overflow-hidden border border-[color:var(--line)]">
+          <img src="images/transcim/seun-kukoyi.jpg" alt="Seun Kukoyi" class="w-full aspect-square object-cover">
+          <div class="p-5"><h3 class="font-bold">Seun Kukoyi</h3><p class="text-sm text-accent font-semibold">Digital Transformation Consultant</p></div>
+        </div>
+        <div class="bg-white rounded-2xl overflow-hidden border-2" style="border-color:var(--accent)">
+          <div class="relative"><img src="images/transcim/dabana-mohammed.jpg" alt="Dabana Mohammed" class="w-full aspect-square object-cover"><span class="absolute top-3 left-3 text-[11px] font-bold uppercase tracking-wider text-white px-2.5 py-1 rounded-full" style="background:var(--accent)">That's me</span></div>
+          <div class="p-5"><h3 class="font-bold">Dabana Mohammed</h3><p class="text-sm text-accent font-semibold">Head of AI &amp; Copilot Studio</p></div>
+        </div>
+        <div class="bg-white rounded-2xl overflow-hidden border border-[color:var(--line)]">
+          <img src="images/transcim/james-whitfield.jpg" alt="James Whitfield" class="w-full aspect-square object-cover">
+          <div class="p-5"><h3 class="font-bold">James Whitfield</h3><p class="text-sm text-accent font-semibold">Power Platform Lead</p></div>
+        </div>
+        <div class="bg-white rounded-2xl overflow-hidden border border-[color:var(--line)]">
+          <img src="images/transcim/amara-okafor.jpg" alt="Amara Okafor" class="w-full aspect-square object-cover">
+          <div class="p-5"><h3 class="font-bold">Amara Okafor</h3><p class="text-sm text-accent font-semibold">Adoption &amp; Change Director</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ RESULT ============================ -->
+  <section class="band band--ink py-20 md:py-28">
+    <div class="case-wrap text-center max-w-3xl mx-auto">
+      <p class="case-eyebrow mb-4">The result</p>
+      <h2 class="case-display text-3xl md:text-5xl text-white mb-6">A consultancy's expertise, made clickable.</h2>
+      <p class="text-muted text-body-lg">The finished site turns deep Microsoft capability into a clear, outcome-led story — credentials, services, approach and team in one confident scroll, with a Copilot Studio AI agent answering questions right on the page. I designed and built it for the consultancy where I lead AI &amp; Copilot Studio.</p>
+    </div>
+  </section>
+
+  <!-- ============================ NEXT ============================ -->
+  <section class="band band--soft py-16">
+    <div class="case-wrap flex flex-col md:flex-row items-center justify-between gap-6">
+      <span class="text-muted text-sm uppercase tracking-wider">Next project</span>
+      <a class="group flex items-center gap-4" href="case-probus.html">
+        <span class="case-display text-3xl md:text-5xl">Probus</span>
+        <span class="material-symbols-outlined text-accent text-4xl group-hover:translate-x-1 transition-transform">arrow_forward</span>
+      </a>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============================ FOOTER ============================ -->
+<footer class="bg-surface-container-low border-t border-outline-variant w-full">
+  <div class="grid grid-cols-1 md:grid-cols-4 gap-gutter max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-20">
+    <div class="md:col-span-1 flex flex-col gap-4">
+      <span class="font-headline-md text-headline-md font-bold text-on-surface">Mohammed Dabana</span>
+      <p class="font-body-md text-body-md text-secondary">Product · UI/UX · 3D · Interior.<br>Based in Accra, Ghana.</p>
+      <p class="font-body-md text-sm text-secondary">© <span data-year>2026</span> Mohammed Dabana. All rights reserved.</p>
+    </div>
+    <div class="md:col-span-3 grid grid-cols-2 md:grid-cols-3 gap-8">
+      <div class="flex flex-col gap-3">
+        <span class="font-label-md text-label-md text-on-surface uppercase tracking-wider mb-1">Explore</span>
+        <a class="text-secondary hover:text-primary font-body-md text-body-md" href="work.html">Work</a>
+        <a class="text-secondary hover:text-primary font-body-md text-body-md" href="about.html">About</a>
+        <a class="text-secondary hover:text-primary font-body-md text-body-md" href="contact.html">Contact</a>
+      </div>
+      <div class="flex flex-col gap-3">
+        <span class="font-label-md text-label-md text-on-surface uppercase tracking-wider mb-1">Case studies</span>
+        <a class="text-secondary hover:text-primary font-body-md text-body-md" href="case-probus.html">Probus</a>
+        <a class="text-secondary hover:text-primary font-body-md text-body-md" href="case-bettabarter.html">BettaBarter</a>
+        <a class="text-secondary hover:text-primary font-body-md text-body-md" href="case-blockcast.html">Blockcast</a>
+        <a class="text-secondary hover:text-primary font-body-md text-body-md" href="case-raissat.html">RAISSAT</a>
+        <a class="text-secondary hover:text-primary font-body-md text-body-md" href="case-duncan.html">Duncan Street</a>
+        <a class="text-secondary hover:text-primary font-body-md text-body-md" href="case-transcim.html">Transcim</a>
+      </div>
+      <div class="flex flex-col gap-3">
+        <span class="font-label-md text-label-md text-on-surface uppercase tracking-wider mb-1">Connect</span>
+        <a class="text-secondary hover:text-primary font-body-md text-body-md" href="https://linkedin.com/in/mohammed-dabana" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="text-secondary hover:text-primary font-body-md text-body-md" href="contact.html">Email</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/app.js"></script>
+</body>
+</html>

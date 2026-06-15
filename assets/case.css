@@ -18,6 +18,10 @@
 .case--blockcast { --accent: #06b6d4; --accent-2: #22d3ee; --soft: #ecfdff; --ink: #07131f; }
 .case--raissat { --accent: #0e7c6e; --accent-2: #dca23a; --soft: #e9f1ea; --ink: #0c2e2a; }
 .case--raissat .band--ink { background: #0b2b28; }
+.case--duncan { --accent: #119a86; --accent-2: #57a83c; --soft: #ecfbf6; --ink: #123b34; }
+.case--duncan .band--ink { background: #0e3a33; }
+.case--transcim { --accent: #0b4da2; --accent-2: #f5a623; --soft: #eef4fc; --ink: #0a1f3c; }
+.case--transcim .band--ink { background: #07182f; }
 
 /* numbered anatomy markers */
 .numdot { width: 34px; height: 34px; border-radius: 10px; display: inline-flex; align-items: center; justify-content: center; font-weight: 800; font-size: 14px; background: color-mix(in srgb, var(--accent) 14%, transparent); color: var(--accent); flex: none; }
