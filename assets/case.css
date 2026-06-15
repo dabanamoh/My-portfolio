@@ -15,6 +15,11 @@
 }
 .case--probus { --accent: #2563eb; --accent-2: #3b82f6; --soft: #eef4ff; --ink: #0b1c30; }
 .case--betta  { --accent: #fb6f84; --accent-2: #f4626e; --soft: #fff5f3; --ink: #1f1733; }
+.case--blockcast { --accent: #06b6d4; --accent-2: #22d3ee; --soft: #ecfdff; --ink: #07131f; }
+
+/* numbered anatomy markers */
+.numdot { width: 34px; height: 34px; border-radius: 10px; display: inline-flex; align-items: center; justify-content: center; font-weight: 800; font-size: 14px; background: color-mix(in srgb, var(--accent) 14%, transparent); color: var(--accent); flex: none; }
+.band--ink .numdot { background: rgba(255,255,255,0.10); color: var(--accent-2); }
 
 /* ---- widths ---- */
 .case-wrap { max-width: 1200px; margin-inline: auto; padding-inline: clamp(20px, 5vw, 64px); }

@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blockcast — Case Study · Mohammed Dabana</title>
+<meta name="description" content="Blockcast — a decentralized truth-verification market on Hedera. Stake on real-world outcomes, let AI resolve them, and dispute on-chain. A product case study by Mohammed Dabana.">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script src="assets/tailwind.config.js"></script>
+<link rel="stylesheet" href="assets/site.css">
+<link rel="stylesheet" href="assets/case.css">
+</head>
+<body class="bg-white text-on-surface font-body text-body-md antialiased">
+
+<div class="case-progress" data-progress></div>
+
+<!-- ============================ NAV ============================ -->
+<header class="fixed top-0 w-full z-50 glass-panel border-b border-outline-variant/30 shadow-sm">
+  <div class="flex justify-between items-center max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop h-20">
+    <a class="font-display text-[22px] md:text-[24px] font-extrabold tracking-tight text-primary" href="index.html">Mohammed&nbsp;Dabana</a>
+    <nav class="hidden md:flex items-center gap-8">
+      <a class="font-label-md text-label-md text-primary font-bold border-b-2 border-primary py-1" href="work.html">Work</a>
+      <a class="font-label-md text-label-md text-secondary hover:text-primary transition-colors" href="about.html">About</a>
+      <a class="font-label-md text-label-md text-secondary hover:text-primary transition-colors" href="contact.html">Contact</a>
+      <a class="bg-primary text-on-primary font-label-md text-label-md px-6 py-3 rounded-lg btn-primary-shadow hover:-translate-y-0.5 transition-transform" href="contact.html">Let's talk</a>
+    </nav>
+    <button data-menu-toggle class="md:hidden text-primary p-2" aria-label="Open menu"><span class="material-symbols-outlined">menu</span></button>
+  </div>
+  <div data-mobile-menu class="hidden md:hidden border-t border-outline-variant/30 bg-surface-container-lowest">
+    <div class="px-margin-mobile py-4 flex flex-col gap-1">
+      <a class="font-label-md text-label-md text-primary font-bold py-3" href="work.html">Work</a>
+      <a class="font-label-md text-label-md text-on-surface hover:text-primary py-3" href="about.html">About</a>
+      <a class="font-label-md text-label-md text-on-surface hover:text-primary py-3" href="contact.html">Contact</a>
+      <a class="bg-primary text-on-primary font-label-md text-label-md px-6 py-3 rounded-lg text-center mt-2" href="contact.html">Let's talk</a>
+    </div>
+  </div>
+</header>
+
+<main class="case case--blockcast pt-20">
+
+  <!-- ============================ COVER ============================ -->
+  <section class="band band--soft">
+    <div class="case-wrap pt-14 md:pt-20 pb-0">
+      <a class="inline-flex items-center gap-1 text-muted hover:text-accent text-sm font-semibold mb-10" href="work.html"><span class="material-symbols-outlined text-[18px]">arrow_back</span> All work</a>
+      <p class="case-eyebrow mb-5">Product Management · Web3 · 2025</p>
+      <h1 class="case-display text-[15vw] leading-[0.9] md:text-[120px] mb-6">Blockcast</h1>
+      <p class="text-body-lg md:text-[22px] text-muted max-w-2xl mb-8">A decentralized <span class="text-accent font-semibold">truth-verification market</span>. Stake on real-world questions, let AI resolve them from credible sources — then challenge any verdict with on-chain evidence.</p>
+      <div class="flex flex-wrap items-center gap-x-8 gap-y-3 text-sm mb-4">
+        <span class="flex items-center gap-2"><span class="text-muted">Role</span><span class="font-semibold">Product Manager</span></span>
+        <span class="flex items-center gap-2"><span class="text-muted">Platform</span><span class="font-semibold">Web3 dApp · web + mobile</span></span>
+        <span class="flex items-center gap-2"><span class="text-muted">Chain</span><span class="font-semibold">Hedera</span></span>
+        <span class="flex items-center gap-2"><span class="text-muted">Year</span><span class="font-semibold">2025</span></span>
+      </div>
+      <p class="text-sm text-muted max-w-2xl mb-14 italic">I owned the product and built the working MVP with AI — defining the market lifecycle, the verifier flows and the dispute economics, then refining each user flow with AI.</p>
+    </div>
+    <!-- cover screen, breaks the band -->
+    <div class="case-wide pb-16 md:pb-24">
+      <div class="glow browser">
+        <div class="browser__bar"><span class="browser__dots"><i></i><i></i><i></i></span><span class="browser__url">blockcast.app/market/african-union-currency</span></div>
+        <div style="max-height:560px;overflow:hidden">
+          <img src="images/blockcast/market-detail.jpg" style="object-position:top" alt="A Blockcast prediction market — Truth/False odds and a $4.2M verification pool">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ OVERVIEW ============================ -->
+  <section class="case-wrap py-20 md:py-28">
+    <div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+      <div class="md:col-span-4">
+        <p class="case-eyebrow mb-4">Overview</p>
+        <div class="rule"></div>
+      </div>
+      <div class="md:col-span-8">
+        <p class="text-[22px] md:text-[26px] leading-snug font-semibold mb-6">Who decides what's true online? Blockcast turns that question into a market — and settles it with AI, a community of verifiers, and a paper trail on-chain.</p>
+        <p class="text-body-lg text-muted max-w-2xl">Every market is a real-world yes/no question backed by a credible source. People stake on <span class="font-semibold text-accent">Truth</span> or <span class="font-semibold">False</span>; an AI engine cross-references multiple sources to resolve the outcome; and anyone who disagrees can stake HBAR to submit evidence and trigger a community dispute. As product manager I built the MVP with AI and refined every flow with it — from browsing markets to filing a dispute.</p>
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 mt-12">
+          <div><div class="text-3xl font-extrabold text-accent">AI</div><div class="text-sm text-muted mt-1">resolves each market</div></div>
+          <div><div class="text-3xl font-extrabold text-accent">HBAR</div><div class="text-sm text-muted mt-1">stakes &amp; rewards</div></div>
+          <div><div class="text-3xl font-extrabold text-accent">On-chain</div><div class="text-sm text-muted mt-1">full activity log</div></div>
+          <div><div class="text-3xl font-extrabold text-accent">Web + App</div><div class="text-sm text-muted mt-1">one product</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ SHOWCASE (dark) ============================ -->
+  <section class="band band--ink py-20 md:py-28">
+    <div class="case-wide">
+      <div class="max-w-2xl mb-14">
+        <img src="images/blockcast/logo-white.png" alt="Blockcast" class="h-7 w-auto mb-6 opacity-90">
+        <h2 class="case-display text-4xl md:text-6xl text-white mb-5">An exchange<br>for the truth.</h2>
+        <p class="text-muted text-body-lg">The same market in your pocket — browse, stake and verify from a phone, with your verifier wallet and balance one tap away.</p>
+      </div>
+      <div class="flex flex-wrap justify-center gap-8 md:gap-14">
+        <div class="glow phone tilt-r"><div class="phone__s"><img src="images/blockcast/phone-1.png" alt="Blockcast mobile — the Truth Markets feed"></div></div>
+        <div class="glow phone tilt-l"><div class="phone__s"><img src="images/blockcast/phone-2.jpg" alt="Blockcast mobile — verifier account with HBAR balance and sections"></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ ANATOMY ============================ -->
+  <section class="case-wrap py-20 md:py-28">
+    <div class="max-w-2xl mb-16">
+      <p class="case-eyebrow mb-4">Anatomy of a market</p>
+      <h2 class="case-display text-4xl md:text-5xl">Four moving parts, one screen.</h2>
+      <p class="text-body-lg text-muted mt-5">Open any market and the whole truth-verification machine is on a single page — the pool, the AI verdict, the dispute desk and a blockchain timeline.</p>
+    </div>
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-start">
+      <div class="lg:col-span-5 flex justify-center lg:sticky lg:top-28">
+        <div class="glow browser max-w-[460px]">
+          <div class="browser__bar"><span class="browser__dots"><i></i><i></i><i></i></span><span class="browser__url">blockcast.app/market</span></div>
+          <img src="images/blockcast/market-detail.jpg" alt="The full Blockcast disputable-market page">
+        </div>
+      </div>
+      <div class="lg:col-span-7 space-y-10">
+        <div class="flex gap-5">
+          <span class="numdot">01</span>
+          <div>
+            <h3 class="text-xl md:text-2xl font-bold mb-2">A verification pool, with live odds</h3>
+            <p class="text-body-lg text-muted">Each market pools stakes on Truth vs False and prices them as live odds — here, 2.00x each against a <span class="font-semibold text-accent">$4.2M pool</span> and 28k verifiers, with the split shown in real time.</p>
+          </div>
+        </div>
+        <div class="flex gap-5">
+          <span class="numdot">02</span>
+          <div>
+            <h3 class="text-xl md:text-2xl font-bold mb-2">AI resolves the outcome</h3>
+            <p class="text-body-lg text-muted">An AI engine analyzes multiple credible sources and cross-references data, combined with community consensus, to settle what actually happened — a methodology spelled out on every market.</p>
+          </div>
+        </div>
+        <div class="flex gap-5">
+          <span class="numdot">03</span>
+          <div>
+            <h3 class="text-xl md:text-2xl font-bold mb-2">Disagree? Put evidence on-chain</h3>
+            <p class="text-body-lg text-muted">Stake <span class="font-semibold text-accent">0.1 HBAR</span> to dispute a resolution with written evidence and source links. Accepted evidence earns up to 1.0 HBAR plus a quality bonus; good-faith attempts get a partial refund.</p>
+          </div>
+        </div>
+        <div class="flex gap-5">
+          <span class="numdot">04</span>
+          <div>
+            <h3 class="text-xl md:text-2xl font-bold mb-2">A complete on-chain timeline</h3>
+            <p class="text-body-lg text-muted">Every market logs its full history — created, closed, evidence submitted — each event stamped with a wallet address and a transaction hash. Status, contract and all.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ DESKTOP FEATURE ============================ -->
+  <section class="band band--soft py-20 md:py-28">
+    <div class="case-wrap">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-center">
+        <div>
+          <span class="chip mb-4">Truth Markets</span>
+          <h2 class="case-display text-3xl md:text-4xl mb-4">The full exchange, on desktop</h2>
+          <p class="text-body-lg text-muted">Browse markets by category — Politics, Finance, Technology — search by source, and sort by what's trending. Every card carries the pool, the verifier count, time to resolution and a confidence badge, so the state of each question reads at a glance.</p>
+        </div>
+        <div class="glow"><img src="images/blockcast/laptop.png" alt="Blockcast Truth Markets dashboard on a laptop" class="w-full h-auto"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ HIGHLIGHTS ============================ -->
+  <section class="case-wrap py-20 md:py-28">
+    <div class="max-w-2xl mb-14">
+      <p class="case-eyebrow mb-4">Product decisions</p>
+      <h2 class="case-display text-3xl md:text-5xl">What makes the model work.</h2>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-10">
+      <div><div class="flex items-center gap-2 mb-2"><span class="material-symbols-outlined text-accent">trending_up</span><h3 class="font-bold">Truth as a market</h3></div><p class="text-muted">Prediction-market mechanics turn a fuzzy "is this true?" into priced, stakeable odds anyone can read.</p></div>
+      <div><div class="flex items-center gap-2 mb-2"><span class="material-symbols-outlined text-accent">auto_awesome</span><h3 class="font-bold">AI + community</h3></div><p class="text-muted">An AI verdict drawn from credible sources, kept honest by a community that's allowed to dispute it.</p></div>
+      <div><div class="flex items-center gap-2 mb-2"><span class="material-symbols-outlined text-accent">gavel</span><h3 class="font-bold">Dispute economics</h3></div><p class="text-muted">Real stakes and rewards in HBAR make bad evidence costly and good evidence worth submitting.</p></div>
+      <div><div class="flex items-center gap-2 mb-2"><span class="material-symbols-outlined text-accent">link</span><h3 class="font-bold">Provenance on-chain</h3></div><p class="text-muted">Genesis events, closures and evidence are all recorded with wallet addresses and transaction hashes.</p></div>
+      <div><div class="flex items-center gap-2 mb-2"><span class="material-symbols-outlined text-accent">devices</span><h3 class="font-bold">One product, two surfaces</h3></div><p class="text-muted">A dense Web3 exchange that stays legible from a wide desktop grid down to a single-column phone.</p></div>
+      <div><div class="flex items-center gap-2 mb-2"><span class="material-symbols-outlined text-accent">dark_mode</span><h3 class="font-bold">A dark, focused UI</h3></div><p class="text-muted">High-contrast cyan-on-navy keeps a data-heavy interface calm, modern and easy to scan.</p></div>
+    </div>
+  </section>
+
+  <!-- ============================ RESULT ============================ -->
+  <section class="band band--ink py-20 md:py-28">
+    <div class="case-wrap text-center max-w-3xl mx-auto">
+      <p class="case-eyebrow mb-4">The result</p>
+      <h2 class="case-display text-3xl md:text-5xl text-white mb-6">From concept to a working Web3 MVP.</h2>
+      <p class="text-muted text-body-lg">Blockcast runs end to end — markets you can browse and stake, AI-assisted resolution, an HBAR-backed dispute system and a full on-chain timeline — built as a product, not a pitch deck. I shaped it as product manager and built the MVP with AI, refining each user flow along the way.</p>
+    </div>
+  </section>
+
+  <!-- ============================ NEXT ============================ -->
+  <section class="band band--soft py-16">
+    <div class="case-wrap flex flex-col md:flex-row items-center justify-between gap-6">
+      <span class="text-muted text-sm uppercase tracking-wider">Next project</span>
+      <a class="group flex items-center gap-4" href="case-probus.html">
+        <span class="case-display text-3xl md:text-5xl">Probus</span>
+        <span class="material-symbols-outlined text-accent text-4xl group-hover:translate-x-1 transition-transform">arrow_forward</span>
+      </a>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============================ FOOTER ============================ -->
+<footer class="bg-surface-container-low border-t border-outline-variant w-full">
+  <div class="grid grid-cols-1 md:grid-cols-4 gap-gutter max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-20">
+    <div class="md:col-span-1 flex flex-col gap-4">
+      <span class="font-headline-md text-headline-md font-bold text-on-surface">Mohammed Dabana</span>
+      <p class="font-body-md text-body-md text-secondary">Product · UI/UX · 3D · Interior.<br>Based in Accra, Ghana.</p>
+      <p class="font-body-md text-sm text-secondary">© <span data-year>2026</span> Mohammed Dabana. All rights reserved.</p>
+    </div>
+    <div class="md:col-span-3 grid grid-cols-2 md:grid-cols-3 gap-8">
+      <div class="flex flex-col gap-3">
+        <span class="font-label-md text-label-md text-on-surface uppercase tracking-wider mb-1">Explore</span>
+        <a class="text-secondary hover:text-primary font-body-md text-body-md" href="work.html">Work</a>
+        <a class="text-secondary hover:text-primary font-body-md text-body-md" href="about.html">About</a>
+        <a class="text-secondary hover:text-primary font-body-md text-body-md" href="contact.html">Contact</a>
+      </div>
+      <div class="flex flex-col gap-3">
+        <span class="font-label-md text-label-md text-on-surface uppercase tracking-wider mb-1">Case studies</span>
+        <a class="text-secondary hover:text-primary font-body-md text-body-md" href="case-probus.html">Probus</a>
+        <a class="text-secondary hover:text-primary font-body-md text-body-md" href="case-bettabarter.html">BettaBarter</a>
+        <a class="text-secondary hover:text-primary font-body-md text-body-md" href="case-blockcast.html">Blockcast</a>
+      </div>
+      <div class="flex flex-col gap-3">
+        <span class="font-label-md text-label-md text-on-surface uppercase tracking-wider mb-1">Connect</span>
+        <a class="text-secondary hover:text-primary font-body-md text-body-md" href="https://linkedin.com/in/mohammed-dabana" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="text-secondary hover:text-primary font-body-md text-body-md" href="contact.html">Email</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/app.js"></script>
+</body>
+</html>
