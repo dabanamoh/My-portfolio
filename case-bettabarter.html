@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BettaBarter — Case Study · Mohammed Dabana</title>
+<meta name="description" content="BettaBarter — a swipe-to-match bartering platform. A product & UI/UX case study by Mohammed Dabana.">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script src="assets/tailwind.config.js"></script>
+<link rel="stylesheet" href="assets/site.css">
+<link rel="stylesheet" href="assets/case.css">
+</head>
+<body class="bg-white text-on-surface font-body text-body-md antialiased">
+
+<div class="case-progress" data-progress></div>
+
+<!-- ============================ NAV ============================ -->
+<header class="fixed top-0 w-full z-50 glass-panel border-b border-outline-variant/30 shadow-sm">
+  <div class="flex justify-between items-center max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop h-20">
+    <a class="font-display text-[22px] md:text-[24px] font-extrabold tracking-tight text-primary" href="index.html">Mohammed&nbsp;Dabana</a>
+    <nav class="hidden md:flex items-center gap-8">
+      <a class="font-label-md text-label-md text-primary font-bold border-b-2 border-primary py-1" href="work.html">Work</a>
+      <a class="font-label-md text-label-md text-secondary hover:text-primary transition-colors" href="about.html">About</a>
+      <a class="font-label-md text-label-md text-secondary hover:text-primary transition-colors" href="contact.html">Contact</a>
+      <a class="bg-primary text-on-primary font-label-md text-label-md px-6 py-3 rounded-lg btn-primary-shadow hover:-translate-y-0.5 transition-transform" href="contact.html">Let's talk</a>
+    </nav>
+    <button data-menu-toggle class="md:hidden text-primary p-2" aria-label="Open menu"><span class="material-symbols-outlined">menu</span></button>
+  </div>
+  <div data-mobile-menu class="hidden md:hidden border-t border-outline-variant/30 bg-surface-container-lowest">
+    <div class="px-margin-mobile py-4 flex flex-col gap-1">
+      <a class="font-label-md text-label-md text-primary font-bold py-3" href="work.html">Work</a>
+      <a class="font-label-md text-label-md text-on-surface hover:text-primary py-3" href="about.html">About</a>
+      <a class="font-label-md text-label-md text-on-surface hover:text-primary py-3" href="contact.html">Contact</a>
+      <a class="bg-primary text-on-primary font-label-md text-label-md px-6 py-3 rounded-lg text-center mt-2" href="contact.html">Let's talk</a>
+    </div>
+  </div>
+</header>
+
+<main class="case case--betta pt-20">
+
+  <!-- ============================ COVER ============================ -->
+  <section class="band band--soft">
+    <div class="case-wrap pt-14 md:pt-20 pb-0">
+      <a class="inline-flex items-center gap-1 text-muted hover:text-accent text-sm font-semibold mb-10" href="work.html"><span class="material-symbols-outlined text-[18px]">arrow_back</span> All work</a>
+      <p class="case-eyebrow mb-5">Product &amp; UI/UX Design · 2025 — 2026</p>
+      <h1 class="case-display text-[14vw] leading-[0.9] md:text-[112px] mb-6">BettaBarter</h1>
+      <p class="text-body-lg md:text-[22px] text-muted max-w-2xl mb-8">Bartering, reinvented. Swipe through items near you, match when it's mutual, then chat and swap — no money needed.</p>
+      <div class="flex flex-wrap items-center gap-x-8 gap-y-3 text-sm mb-14">
+        <span class="flex items-center gap-2"><span class="text-muted">Role</span><span class="font-semibold">Product · UI/UX</span></span>
+        <span class="flex items-center gap-2"><span class="text-muted">Platform</span><span class="font-semibold">Responsive web app</span></span>
+        <span class="flex items-center gap-2"><span class="text-muted">Stack</span><span class="font-semibold">Next.js · InsForge</span></span>
+        <a class="btn-accent !py-2.5 !px-5" href="https://bettabarter.vercel.app/guest" target="_blank" rel="noopener">Live demo <span class="material-symbols-outlined text-[18px]">open_in_new</span></a>
+      </div>
+    </div>
+    <div class="case-wide pb-16 md:pb-24">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-end glow">
+        <div class="lg:col-span-8">
+          <div class="browser">
+            <div class="browser__bar"><span class="browser__dots"><i></i><i></i><i></i></span><span class="browser__url">bettabarter.vercel.app/guest</span></div>
+            <img src="images/bettabarter/prod-01-guest.png" alt="BettaBarter guest landing — trade what you have, get what you want">
+          </div>
+        </div>
+        <div class="lg:col-span-4 flex justify-center">
+          <div class="phone"><div class="phone__s"><img src="images/bettabarter/mobile-swipe.png" alt="BettaBarter swipe deck on mobile"></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ OVERVIEW ============================ -->
+  <section class="case-wrap py-20 md:py-28">
+    <div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+      <div class="md:col-span-4">
+        <p class="case-eyebrow mb-4">Overview</p>
+        <div class="rule"></div>
+      </div>
+      <div class="md:col-span-8">
+        <p class="text-[22px] md:text-[26px] leading-snug font-semibold mb-6">BettaBarter turns decluttering into a game. It borrows the swipe-to-match model people already know and points it at trading real things.</p>
+        <p class="text-body-lg text-muted max-w-2xl">Browse a deck of items near you, swipe right on what you want, and when two people like each other's things it's a match. A guest mode lets anyone try the swipe before signing up — and a layer of trust-and-safety design makes it safe to actually meet and swap.</p>
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 mt-12">
+          <div><div class="text-3xl font-extrabold text-accent">Swipe</div><div class="text-sm text-muted mt-1">match · trade</div></div>
+          <div><div class="text-3xl font-extrabold text-accent">Guest</div><div class="text-sm text-muted mt-1">try, no signup</div></div>
+          <div><div class="text-3xl font-extrabold text-accent">KYC</div><div class="text-sm text-muted mt-1">verified traders</div></div>
+          <div><div class="text-3xl font-extrabold text-accent">4</div><div class="text-sm text-muted mt-1">languages</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ SHOWCASE (dark) ============================ -->
+  <section class="band band--ink py-20 md:py-28">
+    <div class="case-wide">
+      <div class="max-w-2xl mb-14">
+        <p class="case-eyebrow mb-4">The product</p>
+        <h2 class="case-display text-4xl md:text-6xl text-white mb-5">Swipe. Match.<br>Trade.</h2>
+        <p class="text-muted text-body-lg">A playful, coral design language that stays out of the way of the items themselves.</p>
+      </div>
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+        <div class="lg:col-span-4 flex justify-center order-2 lg:order-1">
+          <div class="phone"><div class="phone__s"><img src="images/bettabarter/mobile-hero.png" alt="BettaBarter mobile landing"></div></div>
+        </div>
+        <div class="lg:col-span-8 order-1 lg:order-2">
+          <div class="browser tilt-r">
+            <div class="browser__bar"><span class="browser__dots"><i></i><i></i><i></i></span><span class="browser__url">bettabarter.vercel.app/items</span></div>
+            <img src="images/bettabarter/prod-10-item-list.png" alt="Managing your tradeable items">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ FEATURES ============================ -->
+  <section class="case-wrap py-20 md:py-28">
+    <div class="max-w-2xl mb-16">
+      <p class="case-eyebrow mb-4">Features</p>
+      <h2 class="case-display text-4xl md:text-5xl">Designed to earn trust, then a trade.</h2>
+    </div>
+
+    <div class="space-y-20 md:space-y-28">
+
+      <!-- F1 -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-center">
+        <div class="flex justify-center order-1"><div class="phone"><div class="phone__s"><img src="images/bettabarter/mobile-swipe.png" alt="Guest swipe deck"></div></div></div>
+        <div class="order-2">
+          <span class="chip mb-4">Guest swipe</span>
+          <h3 class="text-2xl md:text-3xl font-bold mb-3">Try it before you sign up</h3>
+          <p class="text-body-lg text-muted">Anyone can swipe a deck of real items with no account and no card — the fastest possible way to understand what the app is for.</p>
+        </div>
+      </div>
+
+      <!-- F2 -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-center">
+        <div class="md:order-2 shot"><img src="images/bettabarter/prod-07-new-item.png" alt="Add new item form with photos, video and 'Looking For'" class="w-full max-h-[520px] object-cover object-top"></div>
+        <div class="md:order-1">
+          <span class="chip mb-4">List an item</span>
+          <h3 class="text-2xl md:text-3xl font-bold mb-3">Say what you have — and what you want</h3>
+          <p class="text-body-lg text-muted">Add photos, video, category and condition, plus a "Looking For" field that powers smarter matches. The barter intent is built into the form.</p>
+        </div>
+      </div>
+
+      <!-- F3 -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-center">
+        <div class="shot"><img src="images/bettabarter/prod-02-swipe-logged-in.png" alt="Profile completion gate before chatting"></div>
+        <div>
+          <span class="chip mb-4">Profile gate</span>
+          <h3 class="text-2xl md:text-3xl font-bold mb-3">Chats stay locked until you're real</h3>
+          <p class="text-body-lg text-muted">A blocking step asks for age, location and phone before you can message — so every match is a verified, local, 18+ person, not a throwaway account.</p>
+        </div>
+      </div>
+
+      <!-- F4 -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-center">
+        <div class="md:order-2 shot"><img src="images/bettabarter/prod-13-profile-edit-acct2.png" alt="Profile with KYC and ID verification" class="w-full max-h-[520px] object-cover object-top"></div>
+        <div class="md:order-1">
+          <span class="chip mb-4">Trust &amp; safety</span>
+          <h3 class="text-2xl md:text-3xl font-bold mb-3">Private, but verified</h3>
+          <p class="text-body-lg text-muted">Your real name and a government ID stay private and are used only for verification — quietly raising the bar for safe, in-person meetups.</p>
+        </div>
+      </div>
+
+      <!-- F5 -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-center">
+        <div class="shot"><img src="images/bettabarter/prod-03-onboarding.png" alt="Onboarding — how BettaBarter works" class="w-full max-h-[520px] object-cover object-top"></div>
+        <div>
+          <span class="chip mb-4">Onboarding</span>
+          <h3 class="text-2xl md:text-3xl font-bold mb-3">Three steps, then you're in</h3>
+          <p class="text-body-lg text-muted">A single friendly card teaches the whole model — swipe, match, swap — before handing people straight to the deck.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================ HIGHLIGHTS ============================ -->
+  <section class="band band--soft py-20 md:py-28">
+    <div class="case-wrap">
+      <div class="max-w-2xl mb-14">
+        <p class="case-eyebrow mb-4">Experience highlights</p>
+        <h2 class="case-display text-3xl md:text-5xl">System thinking, made playful.</h2>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-10">
+        <div><div class="flex items-center gap-2 mb-2"><span class="material-symbols-outlined text-accent">swipe</span><h3 class="font-bold">A borrowed mental model</h3></div><p class="text-muted">Swipe-to-match needs no explanation — people arrive already knowing how to use it.</p></div>
+        <div><div class="flex items-center gap-2 mb-2"><span class="material-symbols-outlined text-accent">lock_open</span><h3 class="font-bold">Mutual chat unlock</h3></div><p class="text-muted">Both sides must opt in before a conversation opens — cutting spam and proving intent on each match.</p></div>
+        <div><div class="flex items-center gap-2 mb-2"><span class="material-symbols-outlined text-accent">verified_user</span><h3 class="font-bold">Trust designed in</h3></div><p class="text-muted">18+ checks, KYC, ID upload and local matching make a stranger-to-stranger swap feel safe.</p></div>
+        <div><div class="flex items-center gap-2 mb-2"><span class="material-symbols-outlined text-accent">translate</span><h3 class="font-bold">Four languages</h3></div><p class="text-muted">English, French, Portuguese and Arabic, translated in-app for mixed-language communities.</p></div>
+        <div><div class="flex items-center gap-2 mb-2"><span class="material-symbols-outlined text-accent">bolt</span><h3 class="font-bold">Real-time by default</h3></div><p class="text-muted">Live chat and notifications keep momentum between a match and a meetup.</p></div>
+        <div><div class="flex items-center gap-2 mb-2"><span class="material-symbols-outlined text-accent">dark_mode</span><h3 class="font-bold">Warm, with a dark mode</h3></div><p class="text-muted">A coral, friendly palette that keeps the focus on the items — light or dark.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ RESULT ============================ -->
+  <section class="case-wrap py-20 md:py-28">
+    <div class="grid grid-cols-1 md:grid-cols-12 gap-gutter items-center">
+      <div class="md:col-span-6 order-2 md:order-1">
+        <p class="case-eyebrow mb-4">The result</p>
+        <h2 class="case-display text-3xl md:text-5xl mb-6">The hard part wasn't the swipe. It was trust.</h2>
+        <p class="text-body-lg text-muted mb-8">Most of the design work went into the layers around the fun part — the gates, the verification, the mutual unlock — so two strangers feel safe enough to actually meet and trade. The result is a complete, multilingual platform you can try right now as a guest.</p>
+        <a class="btn-accent" href="https://bettabarter.vercel.app/guest" target="_blank" rel="noopener">Try the live demo <span class="material-symbols-outlined text-[18px]">arrow_forward</span></a>
+      </div>
+      <div class="md:col-span-6 order-1 md:order-2 flex justify-center">
+        <div class="phone"><div class="phone__s"><img src="images/bettabarter/mobile-swipe.png" alt="BettaBarter swipe on mobile"></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ NEXT ============================ -->
+  <section class="band band--ink py-16">
+    <div class="case-wrap flex flex-col md:flex-row items-center justify-between gap-6">
+      <span class="text-muted text-sm uppercase tracking-wider">Next project</span>
+      <a class="group flex items-center gap-4" href="case-probus.html">
+        <span class="case-display text-3xl md:text-5xl text-white">Probus</span>
+        <span class="material-symbols-outlined text-white text-4xl group-hover:translate-x-1 transition-transform">arrow_forward</span>
+      </a>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============================ FOOTER ============================ -->
+<footer class="bg-surface-container-low border-t border-outline-variant w-full">
+  <div class="grid grid-cols-1 md:grid-cols-4 gap-gutter max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-20">
+    <div class="md:col-span-1 flex flex-col gap-4">
+      <span class="font-headline-md text-headline-md font-bold text-on-surface">Mohammed Dabana</span>
+      <p class="font-body-md text-body-md text-secondary">Product · UI/UX · 3D · Interior.<br>Based in Accra, Ghana.</p>
+      <p class="font-body-md text-sm text-secondary">© <span data-year>2026</span> Mohammed Dabana. All rights reserved.</p>
+    </div>
+    <div class="md:col-span-3 grid grid-cols-2 md:grid-cols-3 gap-8">
+      <div class="flex flex-col gap-3">
+        <span class="font-label-md text-label-md text-on-surface uppercase tracking-wider mb-1">Explore</span>
+        <a class="text-secondary hover:text-primary font-body-md text-body-md" href="work.html">Work</a>
+        <a class="text-secondary hover:text-primary font-body-md text-body-md" href="about.html">About</a>
+        <a class="text-secondary hover:text-primary font-body-md text-body-md" href="contact.html">Contact</a>
+      </div>
+      <div class="flex flex-col gap-3">
+        <span class="font-label-md text-label-md text-on-surface uppercase tracking-wider mb-1">Case studies</span>
+        <a class="text-secondary hover:text-primary font-body-md text-body-md" href="case-probus.html">Probus</a>
+        <a class="text-secondary hover:text-primary font-body-md text-body-md" href="case-bettabarter.html">BettaBarter</a>
+      </div>
+      <div class="flex flex-col gap-3">
+        <span class="font-label-md text-label-md text-on-surface uppercase tracking-wider mb-1">Connect</span>
+        <a class="text-secondary hover:text-primary font-body-md text-body-md" href="https://linkedin.com/in/mohammed-dabana" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="text-secondary hover:text-primary font-body-md text-body-md" href="contact.html">Email</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/app.js"></script>
+</body>
+</html>

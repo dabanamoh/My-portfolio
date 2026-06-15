@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-label="Placeholder — replace with your hero image">
+  <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#eff4ff"/><stop offset="1" stop-color="#dce9ff"/></linearGradient></defs>
+  <rect width="1200" height="900" fill="url(#g)"/>
+  <g transform="translate(600 380)" fill="none" stroke="#4648d4" stroke-width="6" stroke-opacity="0.55" stroke-linejoin="round">
+    <rect x="-150" y="-110" width="300" height="200" rx="14"/>
+    <line x1="-150" y1="40" x2="150" y2="40"/>
+    <circle cx="-110" cy="-70" r="10" fill="#4648d4" stroke="none"/>
+  </g>
+  <text x="600" y="560" text-anchor="middle" font-family="Plus Jakarta Sans, Arial, sans-serif" font-size="40" font-weight="800" fill="#4648d4">Your hero image</text>
+  <text x="600" y="610" text-anchor="middle" font-family="Plus Jakarta Sans, Arial, sans-serif" font-size="24" fill="#565e74">Replace images/ph-hero.svg · ~1200×900</text>
+</svg>

@@ -1,0 +1,77 @@
+/* =========================================================================
+   CASE STUDY SYSTEM  —  reusable, premium components for project pages.
+   Each case sets its own accent via a theme class (.case--probus / .case--betta);
+   the site nav/footer keep the indigo brand.
+   ========================================================================= */
+
+.case {
+  --accent: #4648d4;
+  --accent-2: #6063ee;
+  --ink: #0b1220;
+  --muted: #5b6472;
+  --soft: #f4f6fb;
+  --line: rgba(15, 23, 42, 0.10);
+  color: var(--ink);
+}
+.case--probus { --accent: #2563eb; --accent-2: #3b82f6; --soft: #eef4ff; --ink: #0b1c30; }
+.case--betta  { --accent: #fb6f84; --accent-2: #f4626e; --soft: #fff5f3; --ink: #1f1733; }
+
+/* ---- widths ---- */
+.case-wrap { max-width: 1200px; margin-inline: auto; padding-inline: clamp(20px, 5vw, 64px); }
+.case-wide { max-width: 1340px; margin-inline: auto; padding-inline: clamp(16px, 4vw, 48px); }
+
+/* ---- type helpers ---- */
+.case-eyebrow { font-weight: 700; font-size: 12px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--accent); }
+.case-display { font-weight: 800; letter-spacing: -0.03em; line-height: 1.02; color: var(--ink); }
+.text-accent { color: var(--accent); }
+.text-muted  { color: var(--muted); }
+.rule { width: 52px; height: 4px; border-radius: 99px; background: var(--accent); }
+
+/* ---- full-bleed bands ---- */
+.band { width: 100%; }
+.band--soft   { background: var(--soft); }
+.band--accent { background: var(--accent); color: #fff; }
+.band--ink    { background: #0b1220; color: #e7eaf3; }
+.band--ink .case-eyebrow { color: #fff; opacity: 0.65; }
+.band--ink .text-muted   { color: #9aa6bd; }
+.band--accent .case-eyebrow, .band--accent .text-muted { color: #fff; opacity: 0.85; }
+
+/* ---- chips / buttons ---- */
+.chip { display: inline-block; padding: 0.4rem 0.85rem; border-radius: 999px; background: color-mix(in srgb, var(--accent) 12%, transparent); color: var(--accent); font-weight: 600; font-size: 13px; }
+.band--ink .chip { background: rgba(255,255,255,0.10); color: #fff; }
+.btn-accent { display: inline-flex; align-items: center; gap: 0.5rem; background: var(--accent); color: #fff; padding: 0.85rem 1.5rem; border-radius: 0.65rem; font-weight: 600; font-size: 14px; box-shadow: 0 14px 30px -12px var(--accent); transition: transform 0.2s ease; }
+.btn-accent:hover { transform: translateY(-2px); }
+.btn-ghost { display: inline-flex; align-items: center; gap: 0.5rem; border: 1px solid var(--accent); color: var(--accent); padding: 0.85rem 1.5rem; border-radius: 0.65rem; font-weight: 600; font-size: 14px; transition: background 0.2s ease; }
+
+/* ---- device: browser frame ---- */
+.browser { border-radius: 14px; overflow: hidden; background: #fff; box-shadow: 0 40px 80px -32px rgba(2, 8, 40, 0.45), 0 0 0 1px rgba(2, 8, 40, 0.06); }
+.browser__bar { display: flex; align-items: center; gap: 14px; padding: 12px 16px; background: #f2f3f7; border-bottom: 1px solid rgba(2, 8, 40, 0.06); }
+.browser__dots { display: flex; gap: 7px; flex: none; }
+.browser__dots i { width: 11px; height: 11px; border-radius: 50%; display: block; }
+.browser__dots i:nth-child(1) { background: #ff5f57; }
+.browser__dots i:nth-child(2) { background: #febc2e; }
+.browser__dots i:nth-child(3) { background: #28c840; }
+.browser__url { flex: 1; max-width: 540px; height: 24px; line-height: 24px; padding: 0 14px; border-radius: 999px; background: #fff; border: 1px solid rgba(2, 8, 40, 0.08); color: #9aa3b2; font-size: 12px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.browser img { display: block; width: 100%; height: auto; }
+
+/* ---- device: phone frame ---- */
+.phone { position: relative; width: 300px; max-width: 100%; border-radius: 44px; background: #0b1220; padding: 12px; box-shadow: 0 40px 80px -28px rgba(2, 8, 40, 0.55); }
+.phone__s { position: relative; border-radius: 33px; overflow: hidden; background: #fff; }
+.phone__s img { display: block; width: 100%; height: auto; }
+.phone::after { content: ""; position: absolute; top: 14px; left: 50%; transform: translateX(-50%); width: 38%; height: 20px; background: #0b1220; border-radius: 0 0 16px 16px; z-index: 3; }
+
+/* ---- soft glow behind devices ---- */
+.glow { position: relative; }
+.glow::before { content: ""; position: absolute; inset: -8% -4% 0 -4%; background: radial-gradient(60% 60% at 50% 40%, color-mix(in srgb, var(--accent) 35%, transparent), transparent 70%); filter: blur(40px); z-index: -1; }
+
+/* ---- tilt (desktop only) ---- */
+.tilt-l { transform: perspective(2200px) rotateY(8deg) rotateX(2deg); }
+.tilt-r { transform: perspective(2200px) rotateY(-8deg) rotateX(2deg); }
+@media (max-width: 900px) { .tilt-l, .tilt-r { transform: none; } }
+
+/* ---- feature media frame (screenshot in a soft card) ---- */
+.shot { border-radius: 14px; overflow: hidden; border: 1px solid var(--line); box-shadow: 0 24px 50px -28px rgba(2, 8, 40, 0.35); background: #fff; }
+.shot img { display: block; width: 100%; height: auto; }
+
+/* ---- in-page progress bar ---- */
+.case-progress { position: fixed; top: 0; left: 0; height: 3px; width: 0; background: var(--accent); z-index: 60; transition: width 0.1s linear; }

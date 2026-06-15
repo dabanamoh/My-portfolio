@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Probus — Case Study · Mohammed Dabana</title>
+<meta name="description" content="Probus — an AI-powered HR & workforce-management platform for African SMEs. A product & UI/UX case study by Mohammed Dabana.">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script src="assets/tailwind.config.js"></script>
+<link rel="stylesheet" href="assets/site.css">
+<link rel="stylesheet" href="assets/case.css">
+</head>
+<body class="bg-white text-on-surface font-body text-body-md antialiased">
+
+<div class="case-progress" data-progress></div>
+
+<!-- ============================ NAV ============================ -->
+<header class="fixed top-0 w-full z-50 glass-panel border-b border-outline-variant/30 shadow-sm">
+  <div class="flex justify-between items-center max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop h-20">
+    <a class="font-display text-[22px] md:text-[24px] font-extrabold tracking-tight text-primary" href="index.html">Mohammed&nbsp;Dabana</a>
+    <nav class="hidden md:flex items-center gap-8">
+      <a class="font-label-md text-label-md text-primary font-bold border-b-2 border-primary py-1" href="work.html">Work</a>
+      <a class="font-label-md text-label-md text-secondary hover:text-primary transition-colors" href="about.html">About</a>
+      <a class="font-label-md text-label-md text-secondary hover:text-primary transition-colors" href="contact.html">Contact</a>
+      <a class="bg-primary text-on-primary font-label-md text-label-md px-6 py-3 rounded-lg btn-primary-shadow hover:-translate-y-0.5 transition-transform" href="contact.html">Let's talk</a>
+    </nav>
+    <button data-menu-toggle class="md:hidden text-primary p-2" aria-label="Open menu"><span class="material-symbols-outlined">menu</span></button>
+  </div>
+  <div data-mobile-menu class="hidden md:hidden border-t border-outline-variant/30 bg-surface-container-lowest">
+    <div class="px-margin-mobile py-4 flex flex-col gap-1">
+      <a class="font-label-md text-label-md text-primary font-bold py-3" href="work.html">Work</a>
+      <a class="font-label-md text-label-md text-on-surface hover:text-primary py-3" href="about.html">About</a>
+      <a class="font-label-md text-label-md text-on-surface hover:text-primary py-3" href="contact.html">Contact</a>
+      <a class="bg-primary text-on-primary font-label-md text-label-md px-6 py-3 rounded-lg text-center mt-2" href="contact.html">Let's talk</a>
+    </div>
+  </div>
+</header>
+
+<main class="case case--probus pt-20">
+
+  <!-- ============================ COVER ============================ -->
+  <section class="band band--soft">
+    <div class="case-wrap pt-14 md:pt-20 pb-0">
+      <a class="inline-flex items-center gap-1 text-muted hover:text-accent text-sm font-semibold mb-10" href="work.html"><span class="material-symbols-outlined text-[18px]">arrow_back</span> All work</a>
+      <p class="case-eyebrow mb-5">Product &amp; UI/UX Design · 2026</p>
+      <h1 class="case-display text-[15vw] leading-[0.9] md:text-[120px] mb-6">Probus</h1>
+      <p class="text-body-lg md:text-[22px] text-muted max-w-2xl mb-8">An AI-powered HR &amp; workforce platform for African SMEs — attendance, payroll, approvals and team safety in one role-aware workspace.</p>
+      <div class="flex flex-wrap items-center gap-x-8 gap-y-3 text-sm mb-14">
+        <span class="flex items-center gap-2"><span class="text-muted">Role</span><span class="font-semibold">Product · UI/UX</span></span>
+        <span class="flex items-center gap-2"><span class="text-muted">Platform</span><span class="font-semibold">Responsive web app</span></span>
+        <span class="flex items-center gap-2"><span class="text-muted">Stack</span><span class="font-semibold">React · InsForge</span></span>
+        <a class="btn-accent !py-2.5 !px-5" href="https://probus-v1.vercel.app" target="_blank" rel="noopener">Live site <span class="material-symbols-outlined text-[18px]">open_in_new</span></a>
+      </div>
+    </div>
+    <!-- cover mockup, breaks the band -->
+    <div class="case-wide pb-16 md:pb-24">
+      <div class="glow browser">
+        <div class="browser__bar"><span class="browser__dots"><i></i><i></i><i></i></span><span class="browser__url">probus-v1.vercel.app/admin</span></div>
+        <img src="images/probus/screen-dashboard.png" alt="Probus owner dashboard — activity, AI summary and attendance">
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ OVERVIEW ============================ -->
+  <section class="case-wrap py-20 md:py-28">
+    <div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+      <div class="md:col-span-4">
+        <p class="case-eyebrow mb-4">Overview</p>
+        <div class="rule"></div>
+      </div>
+      <div class="md:col-span-8">
+        <p class="text-[22px] md:text-[26px] leading-snug font-semibold mb-6">Most small businesses run HR on spreadsheets and scattered chat apps. Probus replaces all of it with one calm, role-aware workspace.</p>
+        <p class="text-body-lg text-muted max-w-2xl">Owners, HR and managers share a single Company workspace; employees get a focused app of their own. An AI co-pilot turns raw activity into a plain-language performance summary, and quietly watches in-app communication for safety risks — storing signals, never message contents.</p>
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 mt-12">
+          <div><div class="text-3xl font-extrabold text-accent">4</div><div class="text-sm text-muted mt-1">role-based portals</div></div>
+          <div><div class="text-3xl font-extrabold text-accent">9</div><div class="text-sm text-muted mt-1">workspace modules</div></div>
+          <div><div class="text-3xl font-extrabold text-accent">AI</div><div class="text-sm text-muted mt-1">on every plan</div></div>
+          <div><div class="text-3xl font-extrabold text-accent">RLS</div><div class="text-sm text-muted mt-1">data isolated per company</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ SHOWCASE (dark) ============================ -->
+  <section class="band band--ink py-20 md:py-28">
+    <div class="case-wide">
+      <div class="max-w-2xl mb-14">
+        <p class="case-eyebrow mb-4">The product</p>
+        <h2 class="case-display text-4xl md:text-6xl text-white mb-5">One workspace,<br>every role.</h2>
+        <p class="text-muted text-body-lg">The same calm, pastel-blue system scales from a nine-area admin workspace to a pocket-sized employee app.</p>
+      </div>
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+        <div class="lg:col-span-8">
+          <div class="browser tilt-r">
+            <div class="browser__bar"><span class="browser__dots"><i></i><i></i><i></i></span><span class="browser__url">probus-v1.vercel.app/admin · AI Safety</span></div>
+            <img src="images/probus/screen-aisafety.png" alt="Probus AI Safety console — risk scoring on communications">
+          </div>
+        </div>
+        <div class="lg:col-span-4 flex justify-center">
+          <div class="phone"><div class="phone__s"><img src="images/probus/screen-mobile.png" alt="Probus employee app on mobile"></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ FEATURES ============================ -->
+  <section class="case-wrap py-20 md:py-28">
+    <div class="max-w-2xl mb-16">
+      <p class="case-eyebrow mb-4">Features</p>
+      <h2 class="case-display text-4xl md:text-5xl">Built around the work, not the org chart.</h2>
+    </div>
+
+    <div class="space-y-20 md:space-y-28">
+
+      <!-- F1 -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-center">
+        <div class="shot order-1"><img src="images/probus/screen-dashboard.png" alt="Owner dashboard with AI performance summary"></div>
+        <div class="order-2">
+          <span class="chip mb-4">Dashboard</span>
+          <h3 class="text-2xl md:text-3xl font-bold mb-3">A workspace that briefs you</h3>
+          <p class="text-body-lg text-muted">The owner lands on an AI-written summary — what's going well, what to improve — above live counters for tasks, approvals, clock-ins and recognitions.</p>
+        </div>
+      </div>
+
+      <!-- F2 -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-center">
+        <div class="md:order-2 shot"><img src="images/probus/feature-people.png" alt="Employee directory with searchable people cards"></div>
+        <div class="md:order-1">
+          <span class="chip mb-4">People</span>
+          <h3 class="text-2xl md:text-3xl font-bold mb-3">The whole company, one directory</h3>
+          <p class="text-body-lg text-muted">Search people by name, role or department; jump to records, departments and your team — with message and call one tap away on every card.</p>
+        </div>
+      </div>
+
+      <!-- F3 -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-center">
+        <div class="shot"><img src="images/probus/feature-approvals.png" alt="Approvals routed for sign-off through an approval chain"></div>
+        <div>
+          <span class="chip mb-4">Approvals</span>
+          <h3 class="text-2xl md:text-3xl font-bold mb-3">Approval chains you design once</h3>
+          <p class="text-body-lg text-muted">Requests route to the right people for sign-off — approving advances to the next step, rejecting stops the chain. No more email threads.</p>
+        </div>
+      </div>
+
+      <!-- F4 -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-center">
+        <div class="md:order-2 shot"><img src="images/probus/feature-payroll.png" alt="Payroll settings with editable Nigerian statutory tax engine"></div>
+        <div class="md:order-1">
+          <span class="chip mb-4">Payroll</span>
+          <h3 class="text-2xl md:text-3xl font-bold mb-3">A payroll engine for local law</h3>
+          <p class="text-body-lg text-muted">A table-driven, fully editable tax engine — currency, pension, NHF, CRA — seeded for Nigeria and honest about it: "verify against current law."</p>
+        </div>
+      </div>
+
+      <!-- F5 -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-center">
+        <div class="shot"><img src="images/probus/screen-aisafety.png" alt="AI Safety alerts with risk scores"></div>
+        <div>
+          <span class="chip mb-4">AI Safety</span>
+          <h3 class="text-2xl md:text-3xl font-bold mb-3">A co-pilot that watches for risk</h3>
+          <p class="text-body-lg text-muted">An LLM reads in-app communication for threats — after-hours transfers, unusual urgency — and surfaces scored alerts. It keeps only the signal, never the message.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================ HIGHLIGHTS ============================ -->
+  <section class="band band--soft py-20 md:py-28">
+    <div class="case-wrap">
+      <div class="max-w-2xl mb-14">
+        <p class="case-eyebrow mb-4">Experience highlights</p>
+        <h2 class="case-display text-3xl md:text-5xl">The decisions behind the calm.</h2>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-10">
+        <div><div class="flex items-center gap-2 mb-2"><span class="material-symbols-outlined text-accent">tune</span><h3 class="font-bold">Role-gated complexity</h3></div><p class="text-muted">Four portals mean each person sees only the tools they need — heavy HR machinery, made to feel light.</p></div>
+        <div><div class="flex items-center gap-2 mb-2"><span class="material-symbols-outlined text-accent">auto_awesome</span><h3 class="font-bold">AI as a narrator</h3></div><p class="text-muted">Raw activity is rewritten into a plain-language summary, so insight doesn't require reading a chart.</p></div>
+        <div><div class="flex items-center gap-2 mb-2"><span class="material-symbols-outlined text-accent">shield_lock</span><h3 class="font-bold">Privacy-first by design</h3></div><p class="text-muted">Safety monitoring stores only signals and metadata — message contents are never kept.</p></div>
+        <div><div class="flex items-center gap-2 mb-2"><span class="material-symbols-outlined text-accent">palette</span><h3 class="font-bold">A calm visual language</h3></div><p class="text-muted">Soft pastel-blue surfaces, generous spacing and quiet cards keep a dense product approachable.</p></div>
+        <div><div class="flex items-center gap-2 mb-2"><span class="material-symbols-outlined text-accent">bolt</span><h3 class="font-bold">Fast paths for power users</h3></div><p class="text-muted">A command palette and a floating chat live on every page, so nothing is more than a keystroke away.</p></div>
+        <div><div class="flex items-center gap-2 mb-2"><span class="material-symbols-outlined text-accent">database</span><h3 class="font-bold">Isolation in the database</h3></div><p class="text-muted">Row-level security separates every company's data — enforced on the backend, not just the UI.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ RESULT ============================ -->
+  <section class="case-wrap py-20 md:py-28">
+    <div class="grid grid-cols-1 md:grid-cols-12 gap-gutter items-center">
+      <div class="md:col-span-5">
+        <p class="case-eyebrow mb-4">The result</p>
+        <h2 class="case-display text-3xl md:text-5xl mb-6">A serious HR platform that never feels heavy.</h2>
+        <p class="text-body-lg text-muted mb-8">Probus ships as a complete, deployed product — owners run people operations end to end, employees self-serve from any device, and an AI layer adds insight and safety without adding noise.</p>
+        <a class="btn-accent" href="https://probus-v1.vercel.app" target="_blank" rel="noopener">Explore the live product <span class="material-symbols-outlined text-[18px]">arrow_forward</span></a>
+      </div>
+      <div class="md:col-span-7">
+        <img src="images/probus/mockup-laptop-aisafety.png" alt="Probus AI safety dashboard on a laptop" class="w-full h-auto">
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ NEXT ============================ -->
+  <section class="band band--ink py-16">
+    <div class="case-wrap flex flex-col md:flex-row items-center justify-between gap-6">
+      <span class="text-muted text-sm uppercase tracking-wider">Next project</span>
+      <a class="group flex items-center gap-4" href="case-bettabarter.html">
+        <span class="case-display text-3xl md:text-5xl text-white">BettaBarter</span>
+        <span class="material-symbols-outlined text-white text-4xl group-hover:translate-x-1 transition-transform">arrow_forward</span>
+      </a>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============================ FOOTER ============================ -->
+<footer class="bg-surface-container-low border-t border-outline-variant w-full">
+  <div class="grid grid-cols-1 md:grid-cols-4 gap-gutter max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-20">
+    <div class="md:col-span-1 flex flex-col gap-4">
+      <span class="font-headline-md text-headline-md font-bold text-on-surface">Mohammed Dabana</span>
+      <p class="font-body-md text-body-md text-secondary">Product · UI/UX · 3D · Interior.<br>Based in Accra, Ghana.</p>
+      <p class="font-body-md text-sm text-secondary">© <span data-year>2026</span> Mohammed Dabana. All rights reserved.</p>
+    </div>
+    <div class="md:col-span-3 grid grid-cols-2 md:grid-cols-3 gap-8">
+      <div class="flex flex-col gap-3">
+        <span class="font-label-md text-label-md text-on-surface uppercase tracking-wider mb-1">Explore</span>
+        <a class="text-secondary hover:text-primary font-body-md text-body-md" href="work.html">Work</a>
+        <a class="text-secondary hover:text-primary font-body-md text-body-md" href="about.html">About</a>
+        <a class="text-secondary hover:text-primary font-body-md text-body-md" href="contact.html">Contact</a>
+      </div>
+      <div class="flex flex-col gap-3">
+        <span class="font-label-md text-label-md text-on-surface uppercase tracking-wider mb-1">Case studies</span>
+        <a class="text-secondary hover:text-primary font-body-md text-body-md" href="case-probus.html">Probus</a>
+        <a class="text-secondary hover:text-primary font-body-md text-body-md" href="case-bettabarter.html">BettaBarter</a>
+      </div>
+      <div class="flex flex-col gap-3">
+        <span class="font-label-md text-label-md text-on-surface uppercase tracking-wider mb-1">Connect</span>
+        <a class="text-secondary hover:text-primary font-body-md text-body-md" href="https://linkedin.com/in/mohammed-dabana" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="text-secondary hover:text-primary font-body-md text-body-md" href="contact.html">Email</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/app.js"></script>
+</body>
+</html>

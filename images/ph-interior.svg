@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-label="Placeholder — replace with your interior design image">
+  <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#eff4ff"/><stop offset="1" stop-color="#dce9ff"/></linearGradient></defs>
+  <rect width="1200" height="900" fill="url(#g)"/>
+  <g transform="translate(600 365)" fill="none" stroke="#4648d4" stroke-width="6" stroke-opacity="0.55" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M-140 70 L-140 -40 L0 -110 L140 -40 L140 70 Z"/>
+    <path d="M-50 70 L-50 0 L50 0 L50 70"/>
+  </g>
+  <text x="600" y="560" text-anchor="middle" font-family="Plus Jakarta Sans, Arial, sans-serif" font-size="40" font-weight="800" fill="#4648d4">Interior Design</text>
+  <text x="600" y="610" text-anchor="middle" font-family="Plus Jakarta Sans, Arial, sans-serif" font-size="24" fill="#565e74">Replace with your space / render</text>
+</svg>
