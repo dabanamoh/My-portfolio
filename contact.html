@@ -24,7 +24,7 @@
 <meta name="twitter:description" content="Get in touch about product strategy, AI-powered MVPs, UI/UX and design.">
 <meta name="twitter:image" content="https://portfolio.dabana.bot/images/about/headshot.png">
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"ContactPage","name":"Contact Mohammed Dabana","url":"https://portfolio.dabana.bot/contact.html","about":{"@type":"Person","name":"Mohammed Dabana","jobTitle":"Product Manager","email":"dabana.mohammed@gmail.com","sameAs":["https://linkedin.com/in/mohammed-dabana"]}}
+{"@context":"https://schema.org","@type":"ContactPage","name":"Contact Mohammed Dabana","url":"https://portfolio.dabana.bot/contact.html","about":{"@type":"Person","name":"Mohammed Dabana","jobTitle":"Product Manager","sameAs":["https://linkedin.com/in/mohammed-dabana"]}}
 </script>
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -73,14 +73,17 @@
       <!-- FORM -->
       <div class="lg:col-span-2 bg-surface-container-lowest p-8 md:p-10 rounded-2xl border border-outline-variant/50 card-shadow">
         <!--
-          ▼ TO MAKE THE FORM SEND TO YOUR INBOX (free, no card needed):
-          1. Create a free form at https://formspree.io  (sign in with Google).
-          2. Copy your form's endpoint, e.g. https://formspree.io/f/abcdwxyz
-          3. Paste it into the action="" below, replacing "your-form-id".
-          Until then, the form won't send - but the "Email me" link on the right
-          (dabana.mohammed@gmail.com) and LinkedIn work right now.
+          The form delivers straight to the owner's inbox via Web3Forms (free, unlimited, no card).
+          The destination address lives ONLY on Web3Forms' server - it is never written into this page,
+          so scrapers can't harvest it. To activate: get a free access key at https://web3forms.com
+          (enter the destination address, no account needed) and replace the placeholder value below.
         -->
-        <form action="https://formspree.io/f/your-form-id" method="POST" class="space-y-6">
+        <form id="contact-form" class="space-y-6">
+          <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY">
+          <input type="hidden" name="subject" value="New enquiry from portfolio.dabana.bot">
+          <input type="hidden" name="from_name" value="Portfolio contact form">
+          <!-- honeypot: real people leave this empty -->
+          <input type="checkbox" name="botcheck" class="hidden" style="display:none !important" tabindex="-1" autocomplete="off" aria-hidden="true">
           <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
             <label class="block">
               <span class="font-label-md text-label-md text-on-surface block mb-2" data-i18n="contact.f.name">Full name</span>
@@ -106,10 +109,16 @@
             <textarea name="message" rows="5" required placeholder="Tell me about your goals, timeline, and what success looks like…" class="w-full rounded-lg border-outline-variant/60 bg-surface-container-low focus:border-primary focus:ring-primary text-on-surface placeholder:text-secondary/60 px-4 py-3"></textarea>
           </label>
           <div class="flex items-center gap-4 flex-wrap">
-            <button type="submit" class="inline-flex items-center gap-2 bg-primary text-on-primary font-label-md text-label-md px-8 py-4 rounded-lg btn-primary-shadow hover:-translate-y-1 transition-all"><span data-i18n="contact.f.send">Send message</span> <span class="material-symbols-outlined text-[20px]">send</span></button>
+            <button type="submit" class="inline-flex items-center gap-2 bg-primary text-on-primary font-label-md text-label-md px-8 py-4 rounded-lg btn-primary-shadow hover:-translate-y-1 transition-all disabled:opacity-60 disabled:translate-y-0 disabled:cursor-not-allowed"><span class="btn-send-label" data-i18n="contact.f.send">Send message</span><span class="btn-sending-label hidden" data-i18n="contact.f.sending">Sending…</span> <span class="material-symbols-outlined text-[20px]">send</span></button>
             <span class="inline-flex items-center gap-1 font-caption text-caption text-secondary"><span class="material-symbols-outlined text-[16px]">lock</span> <span data-i18n="contact.f.confid">Your details stay confidential.</span></span>
           </div>
+          <p id="contact-error" hidden class="flex items-center gap-2 font-body-md text-body-md text-[#b3261e] bg-[#fce8e6] rounded-lg px-4 py-3"><span class="material-symbols-outlined text-[18px]">error</span> <span data-i18n="contact.err">Couldn't send just now. Please try again in a moment - or reach me on LinkedIn.</span></p>
         </form>
+        <div id="contact-success" hidden class="text-center py-12">
+          <span class="inline-flex w-14 h-14 rounded-full bg-primary/10 text-primary items-center justify-center mb-4"><span class="material-symbols-outlined text-[32px]">mark_email_read</span></span>
+          <h3 class="font-headline-md text-headline-md text-on-surface mb-2" data-i18n="contact.ok.title">Message sent - thank you!</h3>
+          <p class="font-body-md text-body-md text-secondary max-w-md mx-auto" data-i18n="contact.ok.body">It's landed straight in my inbox. I reply to genuine enquiries within ~24 hours.</p>
+        </div>
       </div>
 
       <!-- SIDE CARDS -->
@@ -120,10 +129,10 @@
           <p class="font-body-md text-body-md text-secondary" data-i18n="contact.side.respbody">I reply to genuine project enquiries within ~24 hours.</p>
         </div>
         <div class="bg-surface-container-lowest p-6 rounded-2xl border border-outline-variant/50 card-shadow flex flex-col gap-5">
-          <a class="flex items-center gap-4 group" href="mailto:dabana.mohammed@gmail.com">
+          <div class="flex items-center gap-4">
             <span class="w-11 h-11 rounded-full bg-surface-container-high text-primary flex items-center justify-center"><span class="material-symbols-outlined">mail</span></span>
-            <span><span class="block font-label-md text-label-md text-on-surface group-hover:text-primary" data-i18n="contact.side.emailme">Email me</span><span class="block font-body-md text-sm text-secondary break-all">dabana.mohammed@gmail.com</span></span>
-          </a>
+            <span><span class="block font-label-md text-label-md text-on-surface" data-i18n="contact.side.emailme">Prefer email?</span><span class="block font-body-md text-sm text-secondary" data-i18n="contact.side.emailnote">Send a note through the form - it lands straight in my inbox.</span></span>
+          </div>
           <a class="flex items-center gap-4 group" href="https://linkedin.com/in/mohammed-dabana" target="_blank" rel="noopener">
             <span class="w-11 h-11 rounded-full bg-surface-container-high text-primary flex items-center justify-center"><span class="material-symbols-outlined">link</span></span>
             <span><span class="block font-label-md text-label-md text-on-surface group-hover:text-primary">LinkedIn</span><span class="block font-body-md text-sm text-secondary">/in/mohammed-dabana</span></span>
@@ -163,7 +172,7 @@
       <div class="flex flex-col gap-3">
         <span class="font-label-md text-label-md text-on-surface uppercase tracking-wider mb-1" data-i18n="footer.connect">Connect</span>
         <a class="text-secondary hover:text-primary font-body-md text-body-md" href="https://linkedin.com/in/mohammed-dabana" target="_blank" rel="noopener">LinkedIn</a>
-        <a class="text-secondary hover:text-primary font-body-md text-body-md" href="mailto:dabana.mohammed@gmail.com" data-i18n="footer.email">Email</a>
+        <a class="text-secondary hover:text-primary font-body-md text-body-md" href="contact.html" data-i18n="footer.email">Email</a>
       </div>
     </div>
   </div>
@@ -171,5 +180,45 @@
 
 <script src="assets/app.js"></script>
 <script src="assets/i18n.js" defer></script>
+<script>
+// Contact form -> Web3Forms (AJAX). The destination address lives only on Web3Forms' server.
+(function () {
+  var form = document.getElementById('contact-form');
+  if (!form) return;
+  var ok = document.getElementById('contact-success');
+  var err = document.getElementById('contact-error');
+  var btn = form.querySelector('button[type="submit"]');
+  var sendLabel = form.querySelector('.btn-send-label');
+  var sendingLabel = form.querySelector('.btn-sending-label');
+  function setSending(on) {
+    if (btn) btn.disabled = on;
+    if (sendLabel) sendLabel.classList.toggle('hidden', on);
+    if (sendingLabel) sendingLabel.classList.toggle('hidden', !on);
+  }
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    if (err) err.hidden = true;
+    if (form.botcheck && form.botcheck.checked) return; // honeypot tripped
+    setSending(true);
+    var payload = JSON.stringify(Object.fromEntries(new FormData(form)));
+    fetch('https://api.web3forms.com/submit', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+      body: payload
+    })
+      .then(function (r) { return r.json(); })
+      .then(function (res) {
+        if (res && res.success) {
+          form.style.display = 'none';
+          if (ok) { ok.hidden = false; ok.scrollIntoView({ behavior: 'smooth', block: 'center' }); }
+        } else { throw new Error(res && res.message ? res.message : 'submit failed'); }
+      })
+      .catch(function () {
+        setSending(false);
+        if (err) err.hidden = false;
+      });
+  });
+})();
+</script>
 </body>
 </html>

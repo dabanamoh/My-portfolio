@@ -113,7 +113,7 @@
   "contact.side.avail": "目前有空档",
   "contact.side.resp": "回复时间",
   "contact.side.respbody": "我会在约 24 小时内回复真诚的项目咨询。",
-  "contact.side.emailme": "给我发邮件",
+  "contact.side.emailme": "更想用邮件？",
   "contact.side.basedin": "常驻地",
   "work.hero.eyebrow": "作品集",
   "work.hero.h1": "精选<span class='text-primary'>作品</span>",
@@ -735,5 +735,10 @@
   "c.tc.pr.role.v": "UI/UX 设计师 &amp; 开发者 · 团队 AI 负责人",
   "c.tc.pr.status.v": "已上线",
   "c.tc.res.h2": "一家咨询公司的专长，变得可点击。",
-  "c.tc.res.p": "完成的网站把深厚的 Microsoft 能力，转化为一个清晰、以结果为导向的故事——资质、服务、方法与团队，凝于一次笃定的滚动，并有一个 Copilot Studio AI 智能体在页面上直接回答问题。我设计了它，再用 AI 依据已批准的设计把它构建出来——为这家我担任 AI 与 Copilot Studio 负责人的咨询公司。"
+  "c.tc.res.p": "完成的网站把深厚的 Microsoft 能力，转化为一个清晰、以结果为导向的故事——资质、服务、方法与团队，凝于一次笃定的滚动，并有一个 Copilot Studio AI 智能体在页面上直接回答问题。我设计了它，再用 AI 依据已批准的设计把它构建出来——为这家我担任 AI 与 Copilot Studio 负责人的咨询公司。",
+  "contact.side.emailnote": "通过表单给我留言即可——它会直接进我的收件箱。",
+  "contact.f.sending": "发送中…",
+  "contact.ok.title": "消息已发送——谢谢！",
+  "contact.ok.body": "它已直接进入我的收件箱。我会在约 24 小时内回复真诚的咨询。",
+  "contact.err": "暂时发送失败。请稍后再试——或在 LinkedIn 上联系我。"
 }

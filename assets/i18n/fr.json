@@ -113,7 +113,7 @@
   "contact.side.avail": "Actuellement disponible",
   "contact.side.resp": "Délai de réponse",
   "contact.side.respbody": "Je réponds aux demandes de projet sérieuses sous ~24 heures.",
-  "contact.side.emailme": "Écrivez-moi",
+  "contact.side.emailme": "Vous préférez l'e-mail ?",
   "contact.side.basedin": "Basé à",
   "work.hero.eyebrow": "Portfolio",
   "work.hero.h1": "Travaux <span class='text-primary'>sélectionnés</span>",
@@ -735,5 +735,10 @@
   "c.tc.pr.role.v": "Designer &amp; développeur UI/UX · responsable IA dans l'équipe",
   "c.tc.pr.status.v": "En ligne",
   "c.tc.res.h2": "L'expertise d'un cabinet, rendue cliquable.",
-  "c.tc.res.p": "Le site fini transforme une capacité Microsoft pointue en un récit clair, orienté résultats - références, services, approche et équipe en un seul défilement assuré, avec un agent Copilot Studio AI qui répond aux questions directement sur la page. Je l'ai conçu, puis utilisé l'IA pour le construire à partir des maquettes approuvées - pour le cabinet où je suis responsable IA &amp; Copilot Studio."
+  "c.tc.res.p": "Le site fini transforme une capacité Microsoft pointue en un récit clair, orienté résultats - références, services, approche et équipe en un seul défilement assuré, avec un agent Copilot Studio AI qui répond aux questions directement sur la page. Je l'ai conçu, puis utilisé l'IA pour le construire à partir des maquettes approuvées - pour le cabinet où je suis responsable IA &amp; Copilot Studio.",
+  "contact.side.emailnote": "Envoyez un mot via le formulaire - il arrive directement dans ma boîte.",
+  "contact.f.sending": "Envoi…",
+  "contact.ok.title": "Message envoyé - merci !",
+  "contact.ok.body": "Il est arrivé directement dans ma boîte. Je réponds aux demandes sérieuses sous ~24 heures.",
+  "contact.err": "Échec de l'envoi pour l'instant. Réessayez dans un moment - ou écrivez-moi sur LinkedIn."
 }
