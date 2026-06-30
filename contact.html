@@ -72,16 +72,7 @@
 
       <!-- FORM -->
       <div class="lg:col-span-2 bg-surface-container-lowest p-8 md:p-10 rounded-2xl border border-outline-variant/50 card-shadow">
-        <!--
-          The form delivers straight to the owner's inbox via Web3Forms (free, unlimited, no card).
-          The destination address lives ONLY on Web3Forms' server - it is never written into this page,
-          so scrapers can't harvest it. To activate: get a free access key at https://web3forms.com
-          (enter the destination address, no account needed) and replace the placeholder value below.
-        -->
         <form id="contact-form" class="space-y-6">
-          <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY">
-          <input type="hidden" name="subject" value="New enquiry from portfolio.dabana.bot">
-          <input type="hidden" name="from_name" value="Portfolio contact form">
           <!-- honeypot: real people leave this empty -->
           <input type="checkbox" name="botcheck" class="hidden" style="display:none !important" tabindex="-1" autocomplete="off" aria-hidden="true">
           <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -96,7 +87,7 @@
           </div>
           <label class="block">
             <span class="font-label-md text-label-md text-on-surface block mb-2" data-i18n="contact.f.need">What do you need?</span>
-            <select name="interest" class="w-full rounded-lg border-outline-variant/60 bg-surface-container-low focus:border-primary focus:ring-primary text-on-surface px-4 py-3">
+            <select name="subject" class="w-full rounded-lg border-outline-variant/60 bg-surface-container-low focus:border-primary focus:ring-primary text-on-surface px-4 py-3">
               <option data-i18n="contact.f.opt1">Product Management</option>
               <option data-i18n="contact.f.opt2">AI integration / AI-powered MVP</option>
               <option data-i18n="contact.f.opt3">UI/UX &amp; Product Design</option>
@@ -181,7 +172,6 @@
 <script src="assets/app.js"></script>
 <script src="assets/i18n.js" defer></script>
 <script>
-// Contact form -> Web3Forms (AJAX). The destination address lives only on Web3Forms' server.
 (function () {
   var form = document.getElementById('contact-form');
   if (!form) return;
@@ -198,20 +188,20 @@
   form.addEventListener('submit', function (e) {
     e.preventDefault();
     if (err) err.hidden = true;
-    if (form.botcheck && form.botcheck.checked) return; // honeypot tripped
+    if (form.botcheck && form.botcheck.checked) return;
     setSending(true);
-    var payload = JSON.stringify(Object.fromEntries(new FormData(form)));
-    fetch('https://api.web3forms.com/submit', {
+    var data = Object.fromEntries(new FormData(form));
+    fetch('https://dv6wbk9e.function2.insforge.app/contact-form', {
       method: 'POST',
-      headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
-      body: payload
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ name: data.name, email: data.email, subject: data.subject, message: data.message, botcheck: data.botcheck || '' })
     })
       .then(function (r) { return r.json(); })
       .then(function (res) {
         if (res && res.success) {
           form.style.display = 'none';
           if (ok) { ok.hidden = false; ok.scrollIntoView({ behavior: 'smooth', block: 'center' }); }
-        } else { throw new Error(res && res.message ? res.message : 'submit failed'); }
+        } else { throw new Error('submit failed'); }
       })
       .catch(function () {
         setSending(false);
