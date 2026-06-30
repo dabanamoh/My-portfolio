@@ -1,5 +1,12 @@
 {
   "cleanUrls": false,
+  "redirects": [
+    {
+      "source": "/proposal-joshua",
+      "destination": "https://dv6wbk9e.insforge.site",
+      "permanent": false
+    }
+  ],
   "headers": [
     {
       "source": "/(.*)",
