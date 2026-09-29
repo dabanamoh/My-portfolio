@@ -42,3 +42,15 @@ img[data-placeholder] { outline: 1px dashed rgba(70,72,212,0.25); outline-offset
 
 /* offset in-page anchor jumps for the fixed nav */
 :target { scroll-margin-top: 96px; }
+
+/* ============================================================
+   Ocean-navy header (new design) — recolours the fixed nav bar
+   ============================================================ */
+.glass-panel{background:rgba(6,30,53,.90);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border:0;border-bottom:1px solid rgba(255,255,255,.12)}
+header.glass-panel a,header.glass-panel .text-primary,header.glass-panel button{color:#fff}
+header.glass-panel .text-secondary{color:#c3ccd8}
+header.glass-panel .text-secondary:hover{color:#8bd8ff}
+header.glass-panel .border-primary{border-color:#8bd8ff!important}
+header.glass-panel .bg-primary{background:#8bd8ff!important;color:#061e35!important;box-shadow:none}
+/* mobile dropdown menu panel on the dark header */
+header.glass-panel [data-menu]{background:#061e35;border-color:rgba(255,255,255,.12)}

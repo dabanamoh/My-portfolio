@@ -1,0 +1,29 @@
+/* ============================================================
+   Consistent ocean-navy site header (matches the new design).
+   Self-contained: no dependency on the new design's CSS/tokens,
+   so it renders identically on the Tailwind-based detail pages.
+   ============================================================ */
+.oceanhead{position:sticky;top:0;z-index:1000;background:#061e35;box-shadow:0 6px 22px rgba(6,30,53,.18);font-family:Arial,Helvetica,system-ui,sans-serif}
+.oceanhead-in{max-width:1200px;margin:0 auto;padding:0 26px;height:80px;display:flex;align-items:center;gap:28px;position:relative}
+.oh-brand{display:flex;gap:14px;align-items:center;text-decoration:none;color:#fff;line-height:1.2}
+.oh-mono{font:italic 34px Georgia,'Times New Roman',serif;color:#fff;flex:0 0 auto}
+.oh-name{font-size:15px;font-weight:700;letter-spacing:-.01em}
+.oh-name small{display:block;font-size:9px;font-weight:400;letter-spacing:.12em;text-transform:uppercase;color:#b4bfc1;margin-top:4px}
+.oh-nav{margin-left:auto;display:flex;align-items:center;gap:28px}
+.oh-nav a{color:#fff;text-decoration:none;font-size:15px;font-weight:600;transition:color .15s ease}
+.oh-nav a:hover{color:#8bd8ff}
+.oh-nav a[aria-current=page]{color:#8bd8ff;border-bottom:2px solid #8bd8ff;padding-bottom:3px}
+.oh-cta{background:#8bd8ff;color:#061e35!important;padding:11px 22px;border-radius:12px;font-weight:700;transition:transform .15s ease,background .15s ease}
+.oh-cta:hover{background:#a8e4ff;transform:translateY(-2px)}
+/* the old pages padded <main> for a fixed header; this one is sticky (in flow), so drop that gap */
+.oceanhead ~ main.pt-20{padding-top:0}
+.oh-toggle{display:none;margin-left:auto;background:transparent;border:1px solid rgba(255,255,255,.35);color:#fff;padding:9px 14px;border-radius:8px;font:inherit;font-weight:600;cursor:pointer}
+@media(max-width:860px){
+  .oceanhead-in{height:70px}
+  .oh-toggle{display:block}
+  .oh-nav{display:none;position:absolute;top:70px;left:0;right:0;background:#061e35;flex-direction:column;align-items:flex-start;gap:16px;padding:20px 26px;border-top:1px solid rgba(255,255,255,.1);box-shadow:0 12px 24px rgba(6,30,53,.25)}
+  .oh-nav.open{display:flex}
+  .oh-nav a[aria-current=page]{border-bottom:0}
+  .oh-name small{display:none}
+  .oh-mono{font-size:30px}
+}

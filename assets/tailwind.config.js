@@ -9,8 +9,8 @@ tailwind.config = {
     extend: {
       colors: {
         /* --- main brand accents (change these two to re-skin the site) --- */
-        primary: "#4648d4",            // indigo — buttons, links, highlights
-        "primary-container": "#6063ee",
+        primary: "#12628c",            // indigo — buttons, links, highlights
+        "primary-container": "#8bd8ff",
         tertiary: "#735c00",           // gold accent (used sparingly)
 
         /* --- text --- */

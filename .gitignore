@@ -1,0 +1,40 @@
+# Dependencies (re-installable, ~28 MB)
+node_modules/
+
+# Local Claude Code settings (machine-specific permissions)
+.claude/settings.local.json
+
+# OS junk
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+.DS_Store
+
+# Editors
+.vscode/
+*.swp
+*~
+
+# Logs & temp
+*.log
+npm-debug.log*
+*.tmp
+
+
+# InsForge & AI agent skills
+.insforge
+.agent
+.agents
+.augment
+.claude
+.cline
+.github/copilot*
+.kilocode
+.qoder
+.qwen
+.roo
+.trae
+.windsurf
+
+# Local test/preview output
+.playwright-mcp/

@@ -86,3 +86,9 @@
 
 /* ---- in-page progress bar ---- */
 .case-progress { position: fixed; top: 0; left: 0; height: 3px; width: 0; background: var(--accent); z-index: 60; transition: width 0.1s linear; }
+
+/* Ocean palette unification (new design colors) — overrides all per-case accents */
+:root,
+.case--probus,.case--betta,.case--blockcast,.case--raissat,.case--duncan,.case--transcim{
+  --accent:#12628c; --accent-2:#8bd8ff; --soft:#eaf3fb; --ink:#061e35;
+}

@@ -1,7 +1,3 @@
-website/
-_build/
-beacon-ai-portfolio-preview-v16.html
-_image-backups/
-AI-CHATBOT-PLAN.md
-CMS-PLAN.md
-COWORK-SETUP.md
+# Only the website is published. Never publish notes/docs or underscore folders.
+*.md
+_*/
